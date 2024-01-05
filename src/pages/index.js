@@ -4,6 +4,7 @@ import { Space_Grotesk, IBM_Plex_Mono } from "next/font/google"
 import Start from '@/components/Start/Start';
 import About from '@/components/About/About';
 import Projects from '@/components/Projects/Projects';
+import Contact from '@/components/Contact/Contact';
 
 const spaceGrotesk = Space_Grotesk({
   weight: ["400"],
@@ -21,6 +22,7 @@ export default function Home() {
       <Start/>
       <About/>
       <Projects/>
+      <Contact/>
     </div>
   )
 }

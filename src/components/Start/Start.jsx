@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import style from './start.module.css'
 import { Space_Grotesk, IBM_Plex_Mono } from "next/font/google"
 import { BiLogoGithub, BiLogoLinkedinSquare, BiLogoGmail } from "react-icons/bi";
+import { SiTelegram } from "react-icons/si";
 
 const spaceGrotesk = Space_Grotesk({
   weight: ["400"],
@@ -25,8 +26,8 @@ export default function Start() {
         <p className={`${ibmPlexMono.className} ${style.description} text-xl text-center`}>Full Stack Web Developer</p>
       </div>
       <div className="w-full flex justify-around text-4xl mt-2 text-gray-200 animate-fade-down">
-        <a className="backdrop-blur-md bg-white/30 hover:bg-red-500 rounded-full p-1" href="https://www.instagram.com/hlrivero18/" target="_blank">
-          <BiLogoGmail />
+        <a className="backdrop-blur-md bg-white/30 hover:bg-sky-500 rounded-full p-1" href="https://t.me/Mrsalitre" target="_blank">
+          <SiTelegram />
         </a>
         <a className="backdrop-blur-md bg-white/30 hover:bg-black rounded-full p-1" href="https://github.com/hlrivero18" target="_blank">
           <BiLogoGithub />
