@@ -1,0 +1,50 @@
+.nav{
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sub {
+    overflow: hidden;
+    border: none;
+    color: #fff;
+    background: none;
+    position: relative;
+    padding-bottom: 0.3em;
+}
+
+.sub:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    background: currentColor;
+    transition: transform 0.25s ease-out;
+}
+
+.sub:hover:before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.rotatingBar {
+    width: 100%;
+    height: 0.2rem;
+    background-image: linear-gradient(to right, #10151d, #ff8936, #c2111f, #004445, #86111c, #10151d);
+    background-size: 600% 100%; /* 6 colores en total */
+    animation: rotateColors 10s linear infinite;
+  }
+  
+  
+  @keyframes rotateColors {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
