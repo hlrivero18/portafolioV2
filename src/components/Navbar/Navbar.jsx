@@ -12,9 +12,11 @@ export default function Navbar() {
     return (
         <div className={`${style.nav} z-50`}>
             <nav className={`${gabarito.className} px-4 z-50 w-full h-16 bg-black text-white flex items-center justify-between`}>
-                {console.log(logo)}
+
                 <div className={` h-full m-0 py-1`}>
-                    <img src={logo.src} alt="logo de la pagina" className='h-full' />
+                    <a href='#inicio'>
+                        <img src={logo.src} alt="logo de la pagina" className='h-full' />
+                    </a>
                 </div>
 
                 <ul className="flex">

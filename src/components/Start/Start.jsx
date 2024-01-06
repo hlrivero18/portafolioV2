@@ -17,7 +17,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 
 export default function Start() {
   return (
-    <div className={`${style.bg} h-screen p-20 grid gap-8 place-content-center text-slate-50`}>
+    <div id='inicio' className={`${style.bg} h-screen p-20 grid gap-8 place-content-center text-slate-50`}>
       {/* <div className={`${style.space}`}></div> */}
       <div className={`${spaceGrotesk.className} md:text-6xl text-5xl text-center md:w-[50rem] animate-fade-up`}>
         <h1>Hey!, Mi nombre es <span className='text-[#e22e09]'>Hector!</span></h1>
