@@ -27,7 +27,7 @@ export default function Projects() {
             name: 'Calculadora de Edad',
             img: `${calendar.src}`,
             description: "Es un sitio Web donde proporcionas tu fecha de nacimiento y como resultado conoces cuantos años, meses y dias tienes.",
-            deployment:"https://webedad.000webhostapp.com/webedad/index.html"
+            deployment:"https://webdeedad.000webhostapp.com/"
         }
     ]
     return (
