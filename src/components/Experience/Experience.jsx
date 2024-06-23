@@ -44,7 +44,7 @@ export default function Experience() {
             <div className="flex items-center flex-col">
                 {experiencia.map((e, i) => {
                     return (
-                        <div key={i} data-aos={e.animacion} className="shadow-2xl backdrop-hue-rotate-60 rounded-lg text-gray-300 m-5 p-4 w-80 border-4 border-[#6c626d]">
+                        <div key={i} data-aos="fade-up" className="shadow-2xl backdrop-hue-rotate-60 rounded-lg text-gray-300 m-5 p-4 w-80 border-4 border-[#6c626d]">
                             <h3 className="text-lg">{e.ocupacion} {e.icon}</h3>
                             <p className="opacity-50">{e.duracion}</p>
                             <p className="text-sm">{e.descripcion}</p>
