@@ -5,6 +5,7 @@ import Start from '@/components/Start/Start';
 import About from '@/components/About/About';
 import Projects from '@/components/Projects/Projects';
 import Contact from '@/components/Contact/Contact';
+import Experience from '@/components/Experience/Experience';
 
 const spaceGrotesk = Space_Grotesk({
   weight: ["400"],
@@ -22,6 +23,7 @@ export default function Home() {
       <Start/>
       <About/>
       <Projects/>
+      <Experience/>
       <Contact/>
     </div>
   )

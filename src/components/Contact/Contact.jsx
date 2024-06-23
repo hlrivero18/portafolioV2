@@ -8,11 +8,11 @@ const gabarito = Gabarito({
 
 export default function Contact() {
     return (
-        <div id="contacto" className={`${gabarito.className} ${style.container} m-auto p-10 md:px-32 text-gray-100 rounded-t-full`}>
+        <div id="contacto" className={`${gabarito.className} bg-[#1e141f] m-auto p-10 md:px-32 text-gray-100 `}>
             <div>
                 
             </div>
-            <h1 className="text-3xl text-center border-b-4 border-up m-auto">Contactame!</h1>
+            <h1 className="text-3xl text-center border-b-4 border-up m-auto border-[#6c626d] pb-2">Contactame!</h1>
             <div className="text-xl md:text-5xl flex justify-around pt-10">
                 <a href="https://wa.me/qr/3X3SU5NRGLJEG1" className="hover:bg-green-500 rounded-full p-4 backdrop-blur-md bg-white/30 hover:text-gray-100" target="_blank">
                     <SiWhatsapp />

@@ -4,6 +4,7 @@ import style from './start.module.css'
 import { Space_Grotesk, IBM_Plex_Mono } from "next/font/google"
 import { BiLogoGithub, BiLogoLinkedinSquare, BiLogoGmail } from "react-icons/bi";
 import { SiTelegram } from "react-icons/si";
+import preview from '../../img/vistaPrevia.png'
 
 const spaceGrotesk = Space_Grotesk({
   weight: ["400"],
@@ -18,6 +19,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 export default function Start() {
   return (
     <div id='inicio' className={`${style.bg} h-screen p-20 grid gap-8 place-content-center text-slate-50`}>
+      <img src={preview.src} alt="vista previa" className='hidden' />
       {/* <div className={`${style.space}`}></div> */}
       <div className={`${spaceGrotesk.className} md:text-6xl text-5xl text-center md:w-[50rem] animate-fade-up`}>
         <h1>Hey!, Mi nombre es <span className='text-[#e22e09]'>Hector!</span></h1>

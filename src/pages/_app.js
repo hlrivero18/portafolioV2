@@ -1,7 +1,6 @@
 import '@/styles/globals.css'
 import Navbar from '@/components/Navbar/Navbar'
 import Head from 'next/head'
-import preview from '../img/vistaPrevia.png'
 
 export default function App({ Component, pageProps }) {
   return (

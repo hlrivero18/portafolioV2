@@ -1,6 +1,10 @@
+"use client"
+import AOS from "aos";
+import 'aos/dist/aos.css';
 import { Gabarito, IBM_Plex_Mono } from "next/font/google"
 import { SiNextdotjs, SiReact, SiJavascript, SiExpress, SiSequelize, SiPostgresql, SiNodedotjs, SiAdobephotoshop } from "react-icons/si";
 import profile from '../../img/profile.png'
+import { useEffect } from "react";
 
 const ibmPlexMono = IBM_Plex_Mono({
     weight: ["400"],
@@ -13,8 +17,12 @@ const gabarito = Gabarito({
 })
 
 export default function About() {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+      }, []);
+
     return (
-        <div id="acerca de mi" className={`${gabarito.className} p-5 md:px-28 md:py-20`}>
+        <div id="acerca de mi" data-aos="fade-up" className={`${gabarito.className} p-5 md:px-28 md:py-20`}>
             <div className={`text-sm border-4 rounded-md shadow-2xl shadow-[#25686e] lg:flex`}>
                 <img src={profile.src} className="border-4 rounded-full mx-auto my-4 h-40 w-40 lg:w-56 lg:h-auto lg:rounded-none lg:m-0" alt="" />
                 <div className="p-5">
