@@ -22,7 +22,7 @@ export default function Experience() {
             animacion: 'fade-right',
             icon: <FaTools className="inline"/>,
             duracion: 'Jun 2015 - actualidad',
-            ocupacion: 'Técnico en reparación de Computadoras y Celulares.',
+            ocupacion: 'Técnico en Reparación de Computadoras y Celulares.',
             habilidades: ['Conocimientos técnicos', 'Resolución de problemas', 'Gestión del tiempo', 'Adaptabilidad y aprendizaje rápido', 'Atención al cliente'],
             descripcion: 'Esta fue mi primera experiencia laboral y mi primer acercamiento a la tecnologia y la electronica.'
         },
@@ -41,10 +41,10 @@ export default function Experience() {
     return (
         <div className={`${gabarito.className} bg-[#1e141f] p-10 border-t-8 border-[#a08ca2]`}>
             <h1 className="text-3xl text-gray-50 text-center border-b-4 border-[#6c626d] pb-2">Experiencia</h1>
-            <div className="flex items-center flex-col">
+            <div className="flex items-center justify-center flex-col lg:flex-row">
                 {experiencia.map((e, i) => {
                     return (
-                        <div key={i} data-aos="fade-up" className="shadow-2xl backdrop-hue-rotate-60 rounded-lg text-gray-300 m-5 p-4 w-80 border-4 border-[#6c626d]">
+                        <div key={i} data-aos={'fade-up'} className="shadow-2xl backdrop-hue-rotate-60 rounded-lg text-gray-300 m-5 p-4 w-80 h-80 border-4 border-[#6c626d]">
                             <h3 className="text-lg">{e.ocupacion} {e.icon}</h3>
                             <p className="opacity-50">{e.duracion}</p>
                             <p className="text-sm">{e.descripcion}</p>
